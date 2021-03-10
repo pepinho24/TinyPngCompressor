@@ -66,6 +66,7 @@ public partial class Compress : System.Web.UI.Page
         else
         {
             var files = GetFiles(path).Take(5);
+            // var files = GetFiles(path); //uncomment to optimize all files
             foreach (var img in files)
             {
                 var sourcePath = img.FilePath;
